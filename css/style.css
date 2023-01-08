@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 87px;
+}
+
+article {
+  width: 325px;
+  padding: 48px 52px 57px 48px;
+}
+
+article img {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+article p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75em;
+    margin-bottom: 35px;
+}
+
+article a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    font-family: "Lexend Deca", sans-serif;
+    border-radius: 25px;
+    padding: 13px 30px;
+}
+
+article a:hover {
+    background-color: transparent;
+    border: medium solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+article:first-of-type {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+article:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+article:nth-of-type(2) a {
+    color: hsl(184, 100%, 22%);
+}
+
+article:last-of-type {
+    background-color: hsl(179, 100%, 13%);
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+article:last-of-type a {
+    color: hsl(179, 100%, 13%);
+}
+
+article a:hover {
+    background-color: transparent;
+    border: medium solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 1440px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 100px;
+    }
+
+    article {
+        width: 307px;
+    }
+
+    article p {
+        margin-bottom: 95px;
+        font-size: 0.95rem;
+    }
+
+    article:first-of-type {
+        border-radius: 10px 0 0 10px;
+    }
+
+    article:last-of-type{
+        border-radius: 0 10px 10px 0;
+        margin-bottom: 0;
+    }
+}
+
+footer {
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
